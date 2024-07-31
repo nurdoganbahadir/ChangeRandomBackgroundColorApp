@@ -10,7 +10,7 @@ overBtn.addEventListener("mouseover", getRandomColorHex);
 colorInput.addEventListener("input", colorInputValue);
 copy.addEventListener("click", copyText);
 
-function getRandomColorHex(e) {
+function getRandomColorHex() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   const color = `#${randomColor.padStart(6, "0")}`;
 
