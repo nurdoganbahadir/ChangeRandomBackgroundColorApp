@@ -7,6 +7,7 @@ const overBtn = document.querySelector(".btn-over");
 
 clickBtn.addEventListener("click", getRandomColorHex);
 overBtn.addEventListener("mouseover", getRandomColorHex);
+colorInput.addEventListener("input", colorInputValue);
 
 function getRandomColorHex(e) {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -15,4 +16,9 @@ function getRandomColorHex(e) {
   bgcolor.style.backgroundColor = color;
   colorText.textContent = color;
   colorInput.value = color;
+}
+function colorInputValue() {
+  const color = colorInput.value;
+  bgcolor.style.backgroundColor = color;
+  colorText.textContent = color;
 }
