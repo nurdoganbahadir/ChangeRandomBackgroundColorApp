@@ -12,4 +12,5 @@ function getRandomColorHex() {
   const color = `#${randomColor.padStart(6, "0")}`;
 
   bgcolor.style.backgroundColor = color;
+  colorText.innerHTML = color;
 }
